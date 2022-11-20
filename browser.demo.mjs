@@ -17,6 +17,7 @@ const page = await context.newPage();
 await page.goto('https://webkit.org/');
 console.log(await page.evaluate(() => window.location.href));
 await page.screenshot({ path: 'page.png' });
+// await page.pause();
 
 await context.close();
 
