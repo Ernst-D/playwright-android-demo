@@ -131,3 +131,6 @@ dist
 
 #test artifacts
 *.png
+
+# apps
+*.apk
