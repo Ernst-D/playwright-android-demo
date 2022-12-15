@@ -10,6 +10,11 @@ await device.screenshot({ path: 'device.png' });
 await device.shell('am force-stop com.wdiodemoapp');
 await device.shell('am start com.wdiodemoapp/.MainActivity');
 const webView = await device.webView({ pkg: "com.wdiodemoapp" });
+/**
+ * ernst: pw-android uses UiSelector class (see https://developer.android.com/reference/android/support/test/uiautomator/UiSelector#description)
+ * and UIAutomator2 as automation driver
+ */
+await device.tap({ desc: "Webview" });
 // todo: add native tap to webview icon
 const page = await webView.page();
 await page.pause();
