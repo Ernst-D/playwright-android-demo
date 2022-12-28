@@ -1,4 +1,4 @@
-import { test, expect } from "core/fixtures/launch-app.fixture";
+import { expect, test } from "core/fixtures/launch-app.fixture";
 
 test.describe("Base Android suite", () => {
     test("Open webview", async ({ device }) => {
