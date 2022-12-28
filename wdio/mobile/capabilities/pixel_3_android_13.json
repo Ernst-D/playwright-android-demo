@@ -1,0 +1,8 @@
+{
+    "platformName": "android",
+    "appium:automationName": "uiautomator2",
+    "appium:deviceName": "Pixel_3a",
+    "appium:platformVersion": "13",
+    "appium:app": "/path/to/wdio-test-app/Android-NativeDemoApp-0.4.0.apk",
+    "appium:appActivity": "MainActivity"
+}
